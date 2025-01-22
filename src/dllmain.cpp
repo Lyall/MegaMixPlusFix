@@ -192,7 +192,7 @@ void Resolution()
         std::uint8_t* ResolutionIndexStartupScanResult = Memory::PatternScan(exeModule, "41 ?? ?? 7E ?? FF ?? 48 FF ?? 48 83 ?? ?? 7C ?? EB ??");
         std::uint8_t* ResolutionIndexScanResult = Memory::PatternScan(exeModule, "8B ?? ?? ?? 8B ?? ?? ?? C6 44 ?? ?? 00 C6 44 ?? ?? 00");
         if (ResolutionIndexStartupScanResult && ResolutionIndexScanResult) {
-            spdlog::info("Resolution Index (Startup): Address is {:s}+{:x}", sExeName.c_str(), ResolutionIndexStartupScanResult - (std::uint8_t*)exeModule);
+            spdlog::info("Resolution Index: Startup: Address is {:s}+{:x}", sExeName.c_str(), ResolutionIndexStartupScanResult - (std::uint8_t*)exeModule);
             static SafetyHookMid ResolutionIndexStartupMidHook{};
             ResolutionIndexStartupMidHook = safetyhook::create_mid(ResolutionIndexStartupScanResult,
                 [](SafetyHookContext& ctx) {
@@ -217,7 +217,7 @@ void Resolution()
         std::uint8_t* ViewportSizeScanResult = Memory::PatternScan(exeModule, "89 ?? ?? 48 8B ?? ?? ?? 89 ?? ?? 48 8B ?? ?? ?? 44 ?? ?? ?? 44 ?? ?? ?? 5F C3");
         std::uint8_t* ViewportSizeStartupScanResult = Memory::PatternScan(exeModule, "45 ?? ?? ?? 41 ?? ?? ?? 45 ?? ?? ?? 45 ?? ?? ?? 66 0F ?? ?? ?? ?? ?? ?? F3 0F ?? ?? ??");
         if (ViewportSizeStartupScanResult && ViewportSizeScanResult) {
-            spdlog::info("Viewport Size (Startup): Address is {:s}+{:x}", sExeName.c_str(), ViewportSizeStartupScanResult - (std::uint8_t*)exeModule);
+            spdlog::info("Viewport Size: Startup: Address is {:s}+{:x}", sExeName.c_str(), ViewportSizeStartupScanResult - (std::uint8_t*)exeModule);
             static SafetyHookMid ViewportSizeStartupMidHook{};
             ViewportSizeStartupMidHook = safetyhook::create_mid(ViewportSizeStartupScanResult,
                 [](SafetyHookContext& ctx) {
