@@ -304,19 +304,6 @@ void HUD()
         else {
             spdlog::error("HUD: Song Selection Text: Pattern scan failed.");
         }
-
-        std::uint8_t* SongSelectTextScanResult = Memory::PatternScan(exeModule, "E8 ?? ?? ?? ?? C7 84 ?? ?? ?? ?? ?? 0D 00 00 00 C7 44 ?? ?? ?? ?? ?? ??");
-        if (SongSelectTextScanResult) {
-            spdlog::info("HUD: Song Selection Text: Address is {:s}+{:x}", sExeName.c_str(), SongSelectTextScanResult - (std::uint8_t*)exeModule);
-            static SafetyHookMid SongSelectTextMidHook{};
-            SongSelectTextMidHook = safetyhook::create_mid(SongSelectTextScanResult - 0x5D, // Big offset as it shares a lot of similar code
-                [](SafetyHookContext& ctx) {
-                    
-                });
-        }
-        else {
-            spdlog::error("HUD: Song Selection Text: Pattern scan failed.");
-        }
     }
 
     if (bStretchHUD) {
