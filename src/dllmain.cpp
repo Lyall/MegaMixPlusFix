@@ -332,7 +332,7 @@ void HUD()
                 });
         }
         else {
-            spdlog::error("HUD: Song Selection Text: Pattern scan failed.");
+            spdlog::error("HUD: Width: Pattern scan(s) failed.");
         }
     }
 }
