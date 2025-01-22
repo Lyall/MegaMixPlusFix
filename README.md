@@ -23,7 +23,7 @@ e.g. ("**steamapps\common\Hatsune Miku Project DIVA Mega Mix Plus**" for Steam).
 
 ## Screenshots
 
-|  |
+| ![ezgif-1-7f622672d9](https://github.com/user-attachments/assets/427e3467-a305-412a-a34f-34dc5d9ea8db) |
 |:--------------------------:|
 | Gameplay |
 
