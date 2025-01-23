@@ -2,11 +2,11 @@
 [![Patreon-Button](https://raw.githubusercontent.com/Lyall/MegaMixPlusFix/refs/heads/master/.github/Patreon-Button.png)](https://www.patreon.com/Wintermance) [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/W7W01UAI9)<br />
 [![Github All Releases](https://img.shields.io/github/downloads/Lyall/MegaMixPlusFix/total.svg)](https://github.com/Lyall/MegaMixPlusFix/releases)
 
-This is an ASI plugin for Hatsune Miku: Project DIVA Mega Mix+ that adds ultrawide/narrower support.
+This is an ASI plugin for Hatsune Miku: Project DIVA Mega Mix+ that adds ultrawide support.
 
 ## Features
 
-- Support for ultrawide/narrower resolutions.
+- Support for ultrawide resolutions.
 - Centered 16:9 HUD with the option to stretch.
 
 ## Installation
