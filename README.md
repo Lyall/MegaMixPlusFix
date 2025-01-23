@@ -31,6 +31,7 @@ e.g. ("**steamapps\common\Hatsune Miku Project DIVA Mega Mix Plus**" for Steam).
 Please report any issues you see.
 
 ## Credits
+Thanks to Wex for making this fix happen! <br/>
 [Ultimate ASI Loader](https://github.com/ThirteenAG/Ultimate-ASI-Loader) for ASI loading. <br />
 [spdlog](https://github.com/gabime/spdlog) for logging. <br />
 [safetyhook](https://github.com/cursey/safetyhook) for hooking.
